@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('vue');
+    return 'laravel test index route';
 });
 
 Route::resource('projects', 'ProjectsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
