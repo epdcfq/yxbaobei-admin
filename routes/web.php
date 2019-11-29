@@ -12,7 +12,10 @@
 */
 
 Route::get('/', function () {
-    return 'laravel test index route';
+    return 'laravel test index route3';
+});
+Route::get('/abc', function () {
+    return 'laravel test index route2';
 });
 
 Route::resource('projects', 'ProjectsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
